@@ -1,0 +1,234 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* comon style */
+body{
+    
+    font-family: 'Poppins', sans-serif;
+     
+}
+/*--------------------
+    football header
+ --------------------- */
+  
+.header{
+    display: flex;
+    background-color: #2D25A0;
+    height: 520px;
+    width: 100%;
+    
+     
+}
+.header-title{
+    width: 50%; 
+    
+}
+
+ 
+
+.header-title h1 {
+    margin-left: 15%;
+}
+.header-title a{
+    color: #ffffff;
+    text-decoration: none;
+    padding:  10px 20px;
+    background-color:#E02C6D ;
+    margin-left: 15%;
+     
+}
+ 
+
+.header-title h1{
+    font-size: 60px;
+     color:white;
+    
+}
+.header-images{
+        width: 50%;
+       
+}
+
+ .header-imgage img{
+     width: 556px;
+     margin-top: 5%;
+   
+       
+ }
+
+ /*---------------
+     player gallery
+  ---------------- */
+  .container-gallery{
+      display: flex;
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      padding: 10%;
+       
+      
+  }
+
+  .player-gallery{
+    width: 300px;
+    height: 474px;
+    background-color: #ffffff;
+    padding: 15px; 
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     
+    
+  }
+
+
+ .player-gallery img{
+    width: 300px;
+    height: 256px;
+    
+ }
+
+ /*------------------
+  highlight gallery
+ -------------------- */
+
+ .highlight-gallery{
+    display: flex;
+
+ }
+ .highlight-details{
+    margin-left: 12%;
+    width: 469px;
+    height: 309px;
+    padding: 10px;
+ }
+
+ .highlight-details h1{
+     font-size: 48px;
+     font-weight: bold;
+ }
+
+
+ .live-screen{
+    width: 50%;
+ }
+ 
+ .live-screen img{
+    width: 567px;
+    height: 427px;
+    padding: 15px;
+
+ }
+
+ .live-button a {
+    background-color:#E02C6D;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+ }
+
+ /* socialicin */
+.footer{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer p{
+    color:black;
+    font-size: 25px;
+}
+ .footer-imgaes img{
+    width: 483.87px;
+    height: 110px;
+ }
+ .social-icon  i{
+          background-color: teal;
+          width: 20px;
+          height: 20px;
+          padding: 10px;
+          border-radius: 25px;
+          color: thistle;
+          margin-top: 10px;
+ }
+   
+
+
+ /* responsive header*/
+
+ @media only screen and (max-width:688px){
+      .header{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+      }
+     .container-head{
+        flex-direction: column;
+         width: 100%;
+         grid-template-columns: repeat(1, 1fr);
+          
+     }
+ .header-title h1{
+     font-size:25px ;
+     margin-left: 42%;
+ }
+
+ .header-title a{
+     margin-left: 40%;
+     
+ }
+ .header-imgage img{
+    width: 312px;
+    margin-top: 6%;
+    margin-left: 79px;
+ }
+
+    }
+
+
+    /*--------------- 
+    responsive gallery
+     -----------------*/
+
+    @media only screen and (max-width:688px){
+            
+        .container-gallery{
+            grid-template-columns: repeat(1, 1fr);
+            width: 350px;
+          
+        }
+         
+
+    }
+
+
+    /*------------------ 
+     highlight resposive gallery 
+    -------------------- */
+    @media only screen and (max-width:688px){
+        .highlight-details{
+            width:380px;
+        }
+        .highlight-gallery{
+            grid-template-columns: repeat(1, 1fr);
+            flex-direction: column;
+            
+        }
+
+        .live-screen img{
+            margin-top: 127px;
+            width: 329px;
+            height: 250px;
+            margin-left: 68px;
+        }
+
+         
+
+    }
+      
+/* footerresponsive */
+@media only screen and (max-width:688px){
+    .footer-imgaes img{
+        margin-right: 13%;
+        width: 302px;
+    }
+    .footer{
+        
+    }
+}
